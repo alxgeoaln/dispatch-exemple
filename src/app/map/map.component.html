@@ -1,0 +1,7 @@
+<div>
+  <h1>Map</h1>
+  <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+    <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+  </sebm-google-map>
+</div>
+<app-change-coords (eventClick)="handleEventClicked($event)"></app-change-coords>
